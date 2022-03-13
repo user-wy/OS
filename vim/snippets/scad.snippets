@@ -1,0 +1,182 @@
+## Main
+
+#        Author    :    wybuhui
+#        Data    :    2/15/20
+#        Function:    scad snippet
+#        Requirements:    vim
+#        Platforms:    All
+
+snippet wy
+	/*
+	*        Author    :    wybuhui
+	*        Data      :    `strftime("%Y-%m-%d")`
+	*        Function  :    ${1:scad} 
+	*        Platforms :    All
+	*/
+	${0}
+
+snippet inc
+	include <${1}>;${0}
+
+snippet cube
+	cube([${1}, ${2}, ${3}]);${0}
+
+snippet ccube
+	cube([${1}, ${2}, ${3}], center=true);${0}
+
+snippet sphere
+	sphere(r = ${1:1});${0}
+
+snippet cylinder
+	cylinder(h = ${1:10}, r = ${2:2});${0}
+
+snippet ech
+	echo(${1});${0}
+
+snippet for
+	for(${1})
+	{
+		${0}
+	}
+
+snippet if
+	if(${1})
+		${0}
+
+snippet ife
+	if(${1})
+	{
+		${2}
+	} else {
+		${3}
+	}
+
+snippet cos
+	cos(${1:degress})${0}
+
+snippet sin
+	sin(${1:degress})${0}
+	
+snippet tan
+	tan(${1:degress})${0}
+
+snippet acos
+	acos(${1:degress})${0}
+
+snippet asin
+	asin(${1:degress})${0}
+
+snippet atan
+	atan(${1:degress})${0}
+
+snippet abs
+	abs(${1})${0}
+
+snippet ceil
+	ceil(${1})${0}
+
+snippet exp
+	exp(${1})${0}
+
+snippet floor
+	floor(${1})${0}
+
+snippet ln
+	ln(${1})${0}
+
+snippet len
+	len(${1})${0}
+
+snippet log
+	log(${1})${0}
+
+snippet max
+	max(${1}, ${2})${0}
+
+snippet min
+	min(${1}, ${2})${0}
+
+snippet pow
+	pow(${1:base}, ${2:exponent})${0}
+
+snippet rands
+	rands(${1:min}, ${2:max}, ${3:count})${0}
+
+snippet round
+	round(${1})${0}
+
+snippet sign
+	sign(${1})${0}
+
+snippet sqrt
+	sqrt(${1})${0}
+
+snippet str
+	str(${1})${0}
+
+snippet scale
+	scale([${1:x}, ${2:y}, ${3:z}])${0}
+
+snippet resize
+	resize([${1:x}, ${2:y}, ${3:z}])${0}
+
+snippet rotate
+	rotate(a=${1:digrees}, v=[${2:x}, ${3:y}, ${4:z}]){
+		${0}
+	}
+
+snippet translate
+	translate([${1:x}, ${2:y}, ${3:z}])${0}
+
+snippet mirror
+	mirror([${1:x}, ${2:y}, ${3:z}])${0}
+
+snippet color
+	color([${1:r,g,b,a}])${0}
+
+snippet minkowski 
+	minkowski()
+	{
+		${0}
+	}
+
+snippet hull 
+	hull()
+	{
+		${0}
+	}
+
+snippet union 
+	union()
+	{
+		${0}
+	}
+
+snippet diff 
+	difference()
+	{
+		${0}
+	}
+
+snippet inter 
+	intersection()
+	{
+		${0}
+	}
+
+snippet hull 
+	hull()
+	{
+		${0}
+	}
+
+snippet module 
+	module ${1:name}(${2}){
+		${0}
+	}
+
+snippet import
+	import("${1}");${0}
+
+snippet pro
+	projection(cut = ${1}) ${0}
