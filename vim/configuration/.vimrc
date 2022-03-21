@@ -2,7 +2,9 @@ set nu
 set et
 set ts=4 sw=4
 set smartindent
+set clipboard=exclude:.*
 set fileencodings=utf-8,cp936
+
 
 "colorscheme darkblue
 filetype plugin indent on
