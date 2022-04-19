@@ -1,4 +1,4 @@
-# Installation `ris:Install`
+# Installation 📚
 
 This repo is used for myself configuration on operating system.
 
